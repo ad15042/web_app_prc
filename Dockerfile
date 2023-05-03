@@ -12,6 +12,7 @@ RUN apt update
 RUN apt install -y
 RUN apt install -y python3-pip
 RUN pip install --upgrade pip
+RUN pip install azure-cognitiveservices-vision-customvision
 
 # requirements.txtをコンテナ側にコピー
 COPY requirements.txt /app
